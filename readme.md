@@ -146,3 +146,41 @@ No unnecessary abstraction
 No background services
 
 Just C, ncurses, and the Linux kernel
+
+Prerequisites
+Before cloning, ensure you have git and the necessary development headers installed.
+
+1. Install Build Tools & Git:
+
+Bash
+
+sudo apt update
+sudo apt install git build-essential
+2. Install UI Headers (ncurses): You need the development version of ncurses to compile the dashboard.
+
+Bash
+
+sudo apt install libncurses5-dev libncursesw5-dev
+Getting Started
+Follow these steps to clone and build the project from scratch:
+
+1. Clone the Repository:
+
+Bash
+
+git clone https://github.com/your-username/desk-monitor.git
+cd desk-monitor
+2. Compile the Source: We use the -lncurses flag for the UI and -lm for the math logic.
+
+Bash
+
+gcc dashboard.c -o sys-dash -lncurses -lm
+3. Run the Dashboard:
+
+Bash
+
+./sys-dash
+Important Developer Notes
+Wireless Support: If you want to include SSID detection, you may also need libiw-dev (sudo apt install libiw-dev) and should add -liw to your compilation command.
+
+Permissions: Reading /proc files usually doesn't require root, but ensure your user has standard access to the system.

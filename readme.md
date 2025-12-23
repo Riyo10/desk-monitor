@@ -2,6 +2,8 @@ Pro System Dash (C / ncurses)
 
 Pro System Dash is a full-scale, real-time Linux system monitor written entirely in C, designed for performance, accuracy, and terminal-native visualization.
 
+![Dashboard Preview](deskss.png)
+
 Unlike most modern system monitors that rely on heavy frameworks or abstraction layers, this project talks directly to the Linux kernel by parsing /proc files and using standard system calls.
 
 Why This Exists

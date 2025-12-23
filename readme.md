@@ -168,7 +168,7 @@ Follow these steps to clone and build the project from scratch:
 
 Bash
 
-git clone https://github.com/your-username/desk-monitor.git
+git clone https://github.com/Riyo10/desk-monito
 cd desk-monitor
 2. Compile the Source: We use the -lncurses flag for the UI and -lm for the math logic.
 
@@ -180,6 +180,7 @@ gcc dashboard.c -o sys-dash -lncurses -lm
 Bash
 
 ./sys-dash
+
 Important Developer Notes
 Wireless Support: If you want to include SSID detection, you may also need libiw-dev (sudo apt install libiw-dev) and should add -liw to your compilation command.
 
